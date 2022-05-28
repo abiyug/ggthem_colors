@@ -8,7 +8,7 @@ canava_palettes <-
 ggthemes::canva_palettes                       # retruns a list hex value and names
 
 
-# get table of hex, id, palette names and create three groups so that color 200 paletts fit per page 
+# get table of hex, id, palette names and create three groups so that 200 paletts fit per page 
 # for readability
 df_palettes <-                                
 purrr::map2_df(canava_palettes, names(canava_palettes),  #loop thru and return df
