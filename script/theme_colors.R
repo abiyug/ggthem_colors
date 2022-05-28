@@ -11,14 +11,14 @@ ggthemes::canva_palettes                       # retruns a list hex value and na
 # get table of hex, id, palette names and create three groups so that color 200 paletts fit per page 
 # for readability
 df_palettes <-                                
-purrr::map2_df(canava_palettes, names(canava_palettes),  #loop thru and turn to 3 col df with map2_df  
+purrr::map2_df(canava_palettes, names(canava_palettes),  #loop thru and return df
                  ~tibble(colors = .x, 
                              id = seq_along(colors), 
                         palette = .y)) %>%
      mutate(id_grp = 1:n(), 
              chopr = chop_equally(id_grp, 3, labels = LETTERS[1:3]))  
 
-# function that plots 200 palletees per page
+# function that plots the palletees per grp range
 # there are 6
 theme_colors <- function(x) {
 df_palettes %>%
