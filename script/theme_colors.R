@@ -30,7 +30,6 @@ ggplot(aes(x = id, y = palette)) +
      geom_label(aes( label = colors), col = "gray40",stat = "unique", face = "bold", fill = "gray88") +
      scale_fill_identity() +
      theme_void() + 
-     #labs(title = "ggthemes canavas colors") + 
      facet_wrap(~ palette, ncol = 4, scales = "free_y") + 
      scale_y_discrete(expand = expansion(mult = c(0, 0.1))) + 
      theme(plot.title = element_text(hjust = 0.5, size = 24, face = "bold", colour = "skyblue4"),
