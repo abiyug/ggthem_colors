@@ -36,7 +36,7 @@ ggplot(aes(x = id, y = palette)) +
            strip.text.x = element_text(size = 14, colour = "slategray4" , margin = margin(0,0,0,0, "cm")))
 }
 
-# Chop because I want to only have 200 palletes per page for redablity
+# Chop to keep 200 palletes per page for redablity
 sub_grp <- LETTERS[1:3]
 
 # Use the function to plot each and add title and caption  
