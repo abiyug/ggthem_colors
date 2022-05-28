@@ -39,7 +39,7 @@ ggplot(aes(x = id, y = palette)) +
 # Chop to keep 200 palletes per page for redablity
 sub_grp <- LETTERS[1:3]
 
-# Use the function to plot each and add title and caption  
+# Use the function to plot each, add title and caption  
 gg_a <-
 theme_colors("A") + labs(title = "ggthemes colors 1-200", caption = "Source: ggthemese canavas palettes | Graphics: @datarecode")
 
