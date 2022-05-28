@@ -23,7 +23,6 @@ purrr::map2_df(canava_palettes, names(canava_palettes),  #loop thru and return d
 theme_colors <- function(x) {
 df_palettes %>%
      arrange(palette) %>% 
-     #head(336) %>%
      filter(chopr == x) %>% 
 ggplot(aes(x = id, y = palette)) + 
      geom_tile(aes(fill = colors, label = colors), col = "gray56", size = 0.5, show.legend = FALSE) + 
